@@ -6,11 +6,8 @@
 
 body {
     font-family: Arial, sans-serif;
-
     background: #f1f5f9;
-
     min-height: 100vh;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,32 +15,76 @@ body {
 
 .container {
     width: 400px;
-
     background: white;
-
-    padding: 30px;
-
+    padding: 35px 30px;
     text-align: center;
-
     border-radius: 15px;
-
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
 
 h1 {
+    font-size: 28px;
+    font-weight: bold;
     margin-bottom: 15px;
+    color: #000000;
 }
 
 .container p {
+    font-size: 15px;
+    color: #333333;
     margin-bottom: 20px;
 }
 
 input {
     width: 100%;
-
     padding: 12px;
-
-    border: 1px solid #ddd;
-
+    border: 1px solid #e2e8f0;
     border-radius: 6px;
+    font-size: 16px;
+    color: #333333;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+input::placeholder {
+    color: #a0aec0;
+}
+
+button {
+    width: auto;
+    min-width: 100px;
+    padding: 10px 25px;
+    font-size: 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    display: inline-block;
+}
+
+#guessBtn {
+    background: #111827;
+    color: white;
+    margin-bottom: 20px;
+}
+
+#guessBtn:hover {
+    background: #1f2937;
+}
+
+#message {
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    min-height: 20px;
+}
+
+#resetBtn {
+    background: #dc2626;
+    color: white;
+    margin-top: 15px;
+}
+
+#resetBtn:hover {
+    background: #b91c1c;
 }
